@@ -8,6 +8,10 @@ hardware:
 
 * `qca6174a`: WiFi and Bluetooth firmware for BBE Extended+WiFi.
 
+The `install.sh` script can be used to install these firmware files on the
+current system. You can run `./install.sh -h` to see the available options for
+this script.
+
 ## Support
 
 Issues and Pull Requests for this repository may be opened on GitHub at
