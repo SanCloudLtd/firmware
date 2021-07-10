@@ -1,7 +1,7 @@
 SanCloud Firmware Files
 =======================
 
-[<img align=right src="https://www.sancloud.com/wp-content/uploads/2016/09/sancloud_and_address_web.png">](https://www.sancloud.com/)
+[<img align=right src="https://www.sancloud.co.uk/wp-content/uploads/2016/09/sancloud_and_address_web.png">](https://www.sancloud.com/)
 
 This repository contains firmware and configuration files for use with SanCloud
 hardware:
