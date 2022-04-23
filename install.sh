@@ -4,7 +4,7 @@
 
 set -euo pipefail
 
-VERSION="v0.1.0"
+VERSION="v0.1.1"
 DESTDIR="/lib/firmware"
 INSTALLOPTS=""
 
@@ -52,16 +52,18 @@ if [ $# -gt 0 ]; then
 fi
 
 install ${INSTALLOPTS} -m 0755 -d "${DESTDIR}"
+install ${INSTALLOPTS} -m 0755 -d "${DESTDIR}/qcacld2"
 install ${INSTALLOPTS} -m 0644 \
         qca6174a/bdwlan30.bin \
         qca6174a/otp30.bin \
         qca6174a/qwlan30.bin \
         qca6174a/utf30.bin \
-        "${DESTDIR}/"
+        "${DESTDIR}/qcacld2/"
 
 install ${INSTALLOPTS} -m 0755 -d "${DESTDIR}/wlan"
+install ${INSTALLOPTS} -m 0755 -d "${DESTDIR}/wlan/qcacld2"
 install ${INSTALLOPTS} -m 0644 \
         qca6174a/wlan/qcom_cfg.ini \
-        "${DESTDIR}/wlan/"
+        "${DESTDIR}/wlan/qcacld2/"
 
 echo "Installed firmware to '${DESTDIR}'."
