@@ -66,4 +66,18 @@ install ${INSTALLOPTS} -m 0644 \
         qca6174a/wlan/qcom_cfg.ini \
         "${DESTDIR}/wlan/qcacld2/"
 
+install ${INSTALLOPTS} -m 0755 -d "${DESTDIR}"
+install ${INSTALLOPTS} -m 0755 -d "${DESTDIR}/qca9377"
+install ${INSTALLOPTS} -m 0644 \
+        qca9377/bdwlan30.bin \
+        qca9377/otp30.bin \
+        qca9377/qwlan30.bin \
+        qca9377/utf30.bin \
+        "${DESTDIR}/qca9377/"
+
+install ${INSTALLOPTS} -m 0755 -d "${DESTDIR}/wlan"
+install ${INSTALLOPTS} -m 0644 \
+        qca9377/wlan/qcom_cfg.ini \
+        "${DESTDIR}/wlan/"
+
 echo "Installed firmware to '${DESTDIR}'."
